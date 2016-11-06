@@ -1,1 +1,7 @@
-
+body {
+  background-color: #98A4DC;
+  font-family: Garamond, Baskerville, "Times New Roman", serif;
+  font-size: 100%;
+  font-variant: small-caps;
+  font-weight: 600;
+}
