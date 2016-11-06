@@ -9,8 +9,10 @@ div, header, nav {
   background-color: white;
 }
 header {
-  float: center;
+  line-height: 2em;
+  margin: 0 auto;
   width: 50%;
+  text-align: center;
 }
 #random {
   position: fixed;
