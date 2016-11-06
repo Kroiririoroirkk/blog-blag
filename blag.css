@@ -10,7 +10,11 @@ div, header {
   background-color: white;
 }
 #random {
-  
+  position: fixed;
+  left: 0;
+  white-space: pre;
+  width: 0.1em;
+  word-wrap: break-word;
 }
 #navbar {
   position: fixed;
