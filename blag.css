@@ -10,7 +10,7 @@ div, header {
   position: fixed;
   left: 0;
   top: 50%;
-  white-space: pre;
+  white-space: pre-wrap;
   width: 1em;
   word-break: break-all;
 }
