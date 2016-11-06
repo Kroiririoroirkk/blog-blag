@@ -14,7 +14,7 @@ div, header {
   left: 0;
   white-space: pre;
   width: 1px;
-  word-wrap: break-word;
+  word-break: break-all;
 }
 #navbar {
   position: fixed;
