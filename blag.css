@@ -4,7 +4,7 @@ body {
 }
 div, nav {
   display: inline-block;
-  border: 0.3em solid black;
+  border: 0.2em solid black;
   padding: 0.5em;
   border-radius: 1em;
   background-color: white;
@@ -14,13 +14,18 @@ header {
   text-align: center;
 }
 header div {
-  margin-left: auto;
-  margin-right: auto;
   width: 50%;
   text-align: center;
 }
 header div h1 {
   line-height: 1em;
+}
+article {
+  width: 100%;
+  text-align: center;
+}
+article div {
+  width: 50%;
 }
 #random {
   position: fixed;
