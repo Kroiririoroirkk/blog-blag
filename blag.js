@@ -4,7 +4,7 @@ $(document).ready(function() {
   random.css("cursor","pointer").click(function() {
     window.location.href = "https://kroiririoroirkk.github.io/blog-blag/#";
   }).hover(function() {
-    random.css("background-color", 0x222288);
+    random.css("background-color", "#AAAAAA");
   }, function() {
     random.css("background-color", background);
   });
