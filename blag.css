@@ -2,18 +2,17 @@ body {
   background-color: #98A4DC;
   font: normal small-caps 600 1em/1em Garamond, Baskerville, "Times New Roman", serif;
 }
-div, header, nav {
+div, nav {
   display: inline-block;
   border: 0.1em solid black;
   border-radius: 1em;
   background-color: white;
 }
-#wrapper {
+header {
   width: 100%;
-  visibility: hidden;
   text-align: center;
 }
-header {
+header div {
   line-height: 2em;
   margin-left: auto;
   margin-right: auto;
