@@ -7,6 +7,10 @@ div, header, nav {
   border-radius: 1em;
   background-color: white;
 }
+header {
+  float: center;
+  width: 50%;
+}
 #random {
   position: fixed;
   left: 3em;
