@@ -9,7 +9,7 @@ div, header, nav {
 }
 #random {
   position: fixed;
-  left: 0;
+  left: 1em;
   top: 50%;
   transform: translateY(-50%);
   width: 0.8em;
@@ -19,7 +19,7 @@ div, header, nav {
 }
 nav {
   position: fixed;
-  right: 0;
+  right: 1em;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
@@ -27,15 +27,12 @@ nav {
 nav a:link {
     text-decoration: none;
 }
-
 nav a:visited {
     text-decoration: none;
 }
-
 nav a:hover {
     text-decoration: underline;
 }
-
 nav a:active {
     text-decoration: underline;
 }
