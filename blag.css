@@ -2,7 +2,8 @@ body {
   background-color: #98A4DC;
   font: normal small-caps 600 1em/1em Garamond, Baskerville, "Times New Roman", serif;
 }
-div, header {
+div, header, nav {
+  display: inline-block;
   border-radius: 1em;
   background-color: white;
 }
