@@ -5,6 +5,7 @@ body {
 div, nav {
   display: inline-block;
   border: 0.1em solid black;
+  padding: 1em;
   border-radius: 1em;
   background-color: white;
 }
