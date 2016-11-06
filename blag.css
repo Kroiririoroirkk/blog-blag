@@ -10,8 +10,9 @@ div, header {
   position: fixed;
   left: 0;
   top: 50%;
+  width: 0.8em;
+  text-align: center;
   white-space: pre-wrap;
-  width: 1em;
   word-break: break-all;
 }
 #navbar {
