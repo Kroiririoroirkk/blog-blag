@@ -8,6 +8,9 @@ div, header, nav {
   border-radius: 1em;
   background-color: white;
 }
+#wrapper {
+  text-align: center;
+}
 header {
   line-height: 2em;
   margin-left: auto;
