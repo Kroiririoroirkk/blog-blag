@@ -9,6 +9,8 @@ div, header, nav {
   background-color: white;
 }
 #wrapper {
+  width: 100%;
+  visibility: hidden;
   text-align: center;
 }
 header {
