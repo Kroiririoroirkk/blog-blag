@@ -30,6 +30,6 @@ $(document).ready(function() {
         '<div class="comic"> <img src="' + comicLink + '" alt="' + title + '"> </div>' + 
         'Permalink to comic: https://kroiririoroirkk.github.io/blog-blag/#' + number + '<br>' +
         'Image URL: https://kroiririoroirkk.github.io/blog-blag/' + comicLink;
-    contents.prepend(element);
+    $contents.prepend(element);
   });
 });
