@@ -2,7 +2,7 @@ body {
   background-color: #98A4DC;
   font: normal small-caps 600 1em/1em Garamond, Baskerville, "Times New Roman", serif;
 }
-div, nav {
+.bubble, nav {
   display: inline-block;
   border: 0.1em solid black;
   padding: 0.5em;
