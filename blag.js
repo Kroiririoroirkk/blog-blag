@@ -16,9 +16,10 @@ $(document).ready(function() {
   Array.from(comics).forEach(function(comic){
     /* <div class="comicContainer" id=number>
          <div class="cTitle">title</div>
-         <div class="comic">
+         <div class="comic" onclick="toggle('$(#number .clickText)')>
            <img src="imagePath" alt=title>
          </div>
+         <p class="clickText" style="display: none;">clickText</p>
          Permalink to comic: https://kroiririoroirkk.github.io/blog-blag/# + number
          Image URL: https://kroiririoroirkk.github.io/blog-blag/ + imagePath
        </div>
@@ -26,10 +27,20 @@ $(document).ready(function() {
     var number = comic.getAttribute("number");
     var title = comic.getAttribute("title");
     var comicLink = comic.getAttribute("comic");
+    var clickText = comic.getAttribute("clickText");
     var element = '<div class="comicContainer" id="' + number + '"><div class="cTitle">' + title + '</div>' +
-        '<div class="comic"> <img src="' + comicLink + '" alt="' + title + '"> </div>' + 
+        '<div class="comic" onclick="toggle($(\'#number .clickText\'))> <img src="' + comicLink + '" alt="' + title + '"> </div>' + 
+        '<p class="clickText" style="display: none;">' + clickText + '</p>' +
         'Permalink to comic: https://kroiririoroirkk.github.io/blog-blag/#' + number + '<br>' +
         'Image URL: https://kroiririoroirkk.github.io/blog-blag/' + comicLink;
     $contents.prepend(element);
   });
 });
+
+function toggle(clickElement) {
+  if (clickElement.css("display") === "none") {
+    clickElement.css("display", "block");
+  } else {
+    clickElement.css("display", "none");
+  }
+}
