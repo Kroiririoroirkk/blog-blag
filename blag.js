@@ -29,7 +29,7 @@ $(document).ready(function() {
     var comicLink = comic.getAttribute("comic");
     var clickText = comic.getAttribute("clickText");
     var element = '<div class="comicContainer" id="' + number + '"><div class="cTitle">' + title + '</div>' +
-        '<div class="comic" onclick="toggle($(\'#number .clickText\'))> <img src="' + comicLink + '" alt="' + title + '"> </div>' + 
+        '<div class="comic" onclick="toggle($(\'#number .clickText\'))"> <img src="' + comicLink + '" alt="' + title + '"> </div>' + 
         '<p class="clickText" style="display: none;">' + clickText + '</p>' +
         'Permalink to comic: https://kroiririoroirkk.github.io/blog-blag/#' + number + '<br>' +
         'Image URL: https://kroiririoroirkk.github.io/blog-blag/' + comicLink;
