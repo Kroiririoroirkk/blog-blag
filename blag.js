@@ -1,19 +1,26 @@
+function randomInt(min,max) {
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
 $(document).ready(function() {
-  random = $("#random");
-  background = random.css("background-color");
-  random.css("cursor","pointer").click(function() {
-    window.location.href = "https://kroiririoroirkk.github.io/blog-blag/#";
-  }).hover(function() {
-    random.css("background-color", "#AAAAAA");
-  }, function() {
-    random.css("background-color", background);
-  });
+  var random = $("#random");
+  var background = random.css("background-color");
   var $contents = $("#contents");
   var blogXml = $("#blogxml").text();
   var parser = new DOMParser();
   var doc = parser.parseFromString(blogXml, "text/xml");
   var comics = doc.getElementsByTagNameNS("kroicomics", "comic");
-  Array.from(comics).forEach(function(comic){
+  var comicArr = Array.from(comics);
+  random.css("cursor","pointer").click(function() {
+    var maxComic = Math.max(...comicArr.map(function(comic) {
+      return comic.getAttribute("number");
+    }));
+    window.location.href = "https://kroiririoroirkk.github.io/blog-blag/#" + randomInt(1,maxComic).toString();
+  }).hover(function() {
+    random.css("background-color", "#AAAAAA");
+  }, function() {
+    random.css("background-color", background);
+  });
+  comicArr.forEach(function(comic){
     /* <div class="comicContainer" id=number>
          <div class="cTitle">title</div>
          <div class="comic" onclick="toggle('$(#number .clickText)')>
@@ -36,7 +43,6 @@ $(document).ready(function() {
     $contents.prepend(element);
   });
 });
-
 function toggle(clickElement) {
   if (clickElement.css("display") === "none") {
     clickElement.css("display", "block");
