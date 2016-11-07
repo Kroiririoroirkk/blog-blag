@@ -56,3 +56,10 @@ nav a:hover {
 nav a:active {
     text-decoration: underline;
 }
+.comicContainer {
+  text-align: center;
+  width: 100%;
+}
+.cTitle {
+  text-align: center;
+}
