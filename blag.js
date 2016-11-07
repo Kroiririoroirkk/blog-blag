@@ -14,7 +14,7 @@ $(document).ready(function() {
   var doc = parser.parseFromString(blogXml, "text/xml");
   var comics = doc.getElementsByTagNameNS("kroicomics", "comic");
   Array.from(comics).forEach(function(comic){
-    /* <div class="comicContainer" id=number>
+    /* <div class="comicContainer" id=number style="text-align=center;">
          <div class="cTitle">title</div>
          <div class="comic">
            <img src="imagePath" alt=title>
@@ -26,7 +26,7 @@ $(document).ready(function() {
     var number = comic.getAttribute("number");
     var title = comic.getAttribute("title");
     var comicLink = comic.getAttribute("comic");
-    var element = '<div class="comicContainer" id="' + number + '"><div class="cTitle">' + title + '</div>' +
+    var element = '<div class="comicContainer" id="' + number + '" style="text-align=center;"><div class="cTitle">' + title + '</div>' +
         '<div class="comic"> <img src="' + comicLink + '" alt="' + title + '"> </div>' + 
         'Permalink to comic: https://kroiririoroirkk.github.io/blog-blag/#' + number + '<br>' +
         'Image URL: https://kroiririoroirkk.github.io/blog-blag/' + comicLink;
