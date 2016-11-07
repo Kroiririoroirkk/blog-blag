@@ -23,9 +23,9 @@ $(document).ready(function() {
          Image URL: https://kroiririoroirkk.github.io/blog-blag/ + imagePath
        </div>
     */
-    var number = comic.attr("number");
-    var title = comic.attr("title");
-    var comicLink = comic.attr("comic");
+    var number = comic.getAttribute("number");
+    var title = comic.getAttribute("title");
+    var comicLink = comic.getAttribute("comic");
     var element = '<div class="comicContainer" id="' + number + '"><div class="cTitle">' + title + '</div>' +
         '<div class="comic"> <img src="' + comicLink + '" alt="' + title + '"> </div>' + 
         'Permalink to comic: https://kroiririoroirkk.github.io/blog-blag/#' + number + '<br>' +
