@@ -13,7 +13,7 @@ $(document).ready(function() {
   var parser = new DOMParser();
   var doc = parser.parseFromString(blogXml, "text/xml");
   var comics = doc.getElementsByTagNameNS("kroicomics", "comic");
-  comics.forEach(function(comic){
+  Array.from(comics).forEach(function(comic){
     /* <div class="comicContainer" id=number>
          <div class="cTitle">title</div>
          <div class="comic">
