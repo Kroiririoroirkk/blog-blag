@@ -61,5 +61,10 @@ nav a:active {
   width: 100%;
 }
 .cTitle {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+}
+.comic {
+  width: 100%;
 }
