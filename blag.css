@@ -64,8 +64,7 @@ nav a:active {
 }
 .cTitle {
   font-size: 1.5em;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1em auto;
   text-align: center;
 }
 .comic {
