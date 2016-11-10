@@ -60,6 +60,7 @@ nav a:active {
   text-align: center;
   width: 100%;
   margin-bottom: 30em;
+  border-radius: 1em;
   border: 0.1em double black;
 }
 .cTitle {
