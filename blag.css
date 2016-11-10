@@ -61,6 +61,7 @@ nav a:active {
   width: 100%;
   margin-top: 30em;
   margin-bottom: 30em;
+  border: 0.1em double groove black;
 }
 .cTitle {
   font-size: 1.5em;
