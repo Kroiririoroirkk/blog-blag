@@ -6,7 +6,7 @@ $(document).ready(function() {
   var background = random.css("background-color");
   random.css("cursor","pointer").click(function() {
     var maxComic = $(".comicContainer").length;
-    window.location.href = "https://kroiririoroirkk.github.io/blog-blag/#" + randomInt(1,maxComic).toString();
+    window.location.href = "https://kroiririoroirkk.github.io/comics/#" + randomInt(1,maxComic).toString();
   }).hover(function() {
     random.css("background-color", "#AAAAAA");
   }, function() {
