@@ -42,7 +42,7 @@ $(document).ready(function() {
         '<p class="clickText" style="display: none;">' + clickText + '</p>' +
         'Permalink to comic: https://kroiririoroirkk.github.io/blog-blag/#' + number + '<br>' +
         'Image URL: https://kroiririoroirkk.github.io/blog-blag/' + comicLink + '<br>' +
-        'Date of Issue' + date +
+        'Date of Issue: ' + date +
         '</div>';
     $contents.prepend(element);
   });
