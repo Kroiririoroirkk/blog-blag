@@ -29,9 +29,11 @@ $(document).ready(function() {
          <p class="clickText" style="display: none;">clickText</p>
          Permalink to comic: https://kroiririoroirkk.github.io/blog-blag/# + number
          Image URL: https://kroiririoroirkk.github.io/blog-blag/ + imagePath
+         Date of Issue: date
        </div>
     */
     var number = comic.getAttribute("number");
+    var date = comic.getAttribute("date");
     var title = comic.getAttribute("title");
     var comicLink = comic.getAttribute("comic");
     var clickText = comic.getAttribute("clickText");
@@ -39,7 +41,9 @@ $(document).ready(function() {
         '<div class="comic" onclick="toggle($(\'#' + number + ' .clickText\'))"> <img src="' + comicLink + '" alt="' + title + '"> </div>' + 
         '<p class="clickText" style="display: none;">' + clickText + '</p>' +
         'Permalink to comic: https://kroiririoroirkk.github.io/blog-blag/#' + number + '<br>' +
-        'Image URL: https://kroiririoroirkk.github.io/blog-blag/' + comicLink;
+        'Image URL: https://kroiririoroirkk.github.io/blog-blag/' + comicLink + '<br>' +
+        'Date of Issue' + date +
+        '</div>';
     $contents.prepend(element);
   });
 });
