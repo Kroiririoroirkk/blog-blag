@@ -2,6 +2,7 @@ function randomInt(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 $(document).ready(function() {
+  $("img.lazy").lazyLoad();
   var random = $("#random");
   var background = random.css("background-color");
   random.css("cursor","pointer").click(function() {
